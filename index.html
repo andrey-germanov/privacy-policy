@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Money Tracker</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #e2e8f0;
+            background: #0a0e1a;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .container {
+            background: #111827;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            color: #ffffff;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .last-updated {
+            color: #9ca3af;
+            font-style: italic;
+            margin-bottom: 30px;
+            font-size: 0.9em;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            color: #ffffff;
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            margin-top: 20px;
+        }
+        
+        .subsection-title {
+            color: #ffffff;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .paragraph {
+            color: #d1d5db;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+            line-height: 1.8;
+        }
+        
+        .list-item {
+            color: #d1d5db;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            font-size: 0.95em;
+            line-height: 1.8;
+        }
+        
+        .link {
+            color: #3b82f6;
+            text-decoration: underline;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .link:hover {
+            color: #60a5fa;
+        }
+        
+        .contact-info {
+            color: #3b82f6;
+            font-weight: 500;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #374151;
+        }
+        
+        .footer-text {
+            color: #6b7280;
+            font-style: italic;
+            text-align: center;
+            font-size: 0.85em;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .section-title {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last updated: <span id="last-updated-date"></span></p>
+
+        <div class="section">
+            <h2 class="section-title">1. Introduction</h2>
+            <p class="paragraph">
+                Welcome to Money Tracker ("we," "our," or "us"). We are committed to protecting your privacy and ensuring the security of your personal and financial information. This Privacy Policy explains how we collect, use, store, and protect your data when you use our mobile application.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">2. Information We Collect</h2>
+            
+            <h3 class="subsection-title">2.1 Financial Data</h3>
+            <p class="paragraph">
+                We collect the following financial information that you voluntarily provide:
+            </p>
+            <p class="list-item">• Receipt images and scanned data (merchant name, date, total amount, items purchased)</p>
+            <p class="list-item">• Income records (amount, date, category, description)</p>
+            <p class="list-item">• Expense categories and budgets</p>
+            <p class="list-item">• Currency preferences and exchange rate data</p>
+
+            <h3 class="subsection-title">2.2 Image Data</h3>
+            <p class="paragraph">
+                When you take photos of receipts or select images from your gallery, we process these images using our OCR (Optical Character Recognition) service to extract text and financial information. Images are processed by OpenAI Vision API to recognize and extract data from receipts.
+            </p>
+
+            <h3 class="subsection-title">2.3 Device Information</h3>
+            <p class="paragraph">
+                We may collect limited device information necessary for app functionality:
+            </p>
+            <p class="list-item">• Device type and operating system version</p>
+            <p class="list-item">• App version and usage statistics</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">3. How We Use Your Information</h2>
+            <p class="paragraph">
+                We use the collected information solely for the following purposes:
+            </p>
+            <p class="list-item">• To provide receipt scanning and expense tracking functionality</p>
+            <p class="list-item">• To generate financial analytics, reports, and forecasts</p>
+            <p class="list-item">• To process images through OCR services to extract receipt data</p>
+            <p class="list-item">• To improve app performance and user experience</p>
+            <p class="list-item">• To send you notifications and reminders (with your consent)</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">4. Data Storage and Security</h2>
+            
+            <h3 class="subsection-title">4.1 Local Storage</h3>
+            <p class="paragraph">
+                All your financial data, including receipts, incomes, budgets, and analytics, is stored locally on your device using secure local storage. We do not maintain a central database of your information. Your data never leaves your device except when:
+            </p>
+            <p class="list-item">• You export data (CSV, JSON, PDF) and share it yourself</p>
+            <p class="list-item">• You use the OCR feature, which requires sending images to OpenAI Vision API for text recognition</p>
+
+            <h3 class="subsection-title">4.2 OCR Processing</h3>
+            <p class="paragraph">
+                When you scan a receipt, the image is temporarily sent to OpenAI Vision API for processing. OpenAI's Privacy Policy applies to this data transmission. We do not store images on external servers, and images are not retained by our service after processing.
+            </p>
+
+            <h3 class="subsection-title">4.3 Security Measures</h3>
+            <p class="paragraph">
+                We implement appropriate technical and organizational measures to protect your data:
+            </p>
+            <p class="list-item">• Local encryption of sensitive data</p>
+            <p class="list-item">• Secure API connections (HTTPS) for OCR processing</p>
+            <p class="list-item">• No cloud storage or external databases</p>
+            <p class="list-item">• Regular security updates and patches</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">5. Third-Party Services</h2>
+            
+            <h3 class="subsection-title">5.1 OpenAI Vision API</h3>
+            <p class="paragraph">
+                We use OpenAI Vision API for OCR (Optical Character Recognition) to extract text and data from receipt images. When you scan a receipt, the image is sent to OpenAI's servers for processing. Please review OpenAI's Privacy Policy to understand how they handle your data:
+            </p>
+            <a href="https://openai.com/privacy/" class="link" target="_blank" rel="noopener noreferrer">https://openai.com/privacy/</a>
+
+            <h3 class="subsection-title">5.2 Exchange Rate Services</h3>
+            <p class="paragraph">
+                We may use third-party exchange rate APIs to provide currency conversion functionality. These services do not receive any personal or financial data from your device.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">6. Data Sharing and Disclosure</h2>
+            <p class="paragraph">
+                We do not sell, trade, rent, or share your personal or financial information with third parties, except:
+            </p>
+            <p class="list-item">• OCR Processing: Receipt images are sent to OpenAI Vision API solely for text extraction</p>
+            <p class="list-item">• Legal Requirements: We may disclose information if required by law or to protect our rights</p>
+            <p class="list-item">• User Export: You can export your data at any time using the export feature</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">7. Your Rights and Control</h2>
+            <p class="paragraph">
+                You have full control over your data:
+            </p>
+            <p class="list-item">• Access: All your data is stored locally and accessible through the app</p>
+            <p class="list-item">• Export: You can export all your data in CSV, JSON, or PDF formats at any time</p>
+            <p class="list-item">• Deletion: You can delete individual receipts, incomes, or budgets at any time</p>
+            <p class="list-item">• App Deletion: Uninstalling the app will remove all locally stored data</p>
+            <p class="list-item">• Notifications: You can control notification settings in the app settings</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">8. Children's Privacy</h2>
+            <p class="paragraph">
+                Our app is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you believe we have collected information from a child under 13, please contact us immediately.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">9. Changes to This Privacy Policy</h2>
+            <p class="paragraph">
+                We may update this Privacy Policy from time to time. We will notify you of any changes by:
+            </p>
+            <p class="list-item">• Posting the new Privacy Policy in the app</p>
+            <p class="list-item">• Updating the "Last updated" date</p>
+            <p class="paragraph">
+                You are advised to review this Privacy Policy periodically for any changes. Changes are effective when posted.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">10. Contact Us</h2>
+            <p class="paragraph">
+                If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:
+            </p>
+            <p class="contact-info">Email: support@moneytracker.app</p>
+            <p class="paragraph">
+                We will respond to your inquiries within a reasonable timeframe.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">11. Consent</h2>
+            <p class="paragraph">
+                By using Money Tracker, you consent to the collection and use of information in accordance with this Privacy Policy. If you do not agree with this policy, please do not use the app.
+            </p>
+        </div>
+
+        <div class="footer">
+            <p class="footer-text">
+                This Privacy Policy is effective as of the date listed above and applies to all users of Money Tracker.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Set current date
+        document.getElementById('last-updated-date').textContent = new Date().toLocaleDateString('en-US', { 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric' 
+        });
+    </script>
+</body>
+</html>
+
